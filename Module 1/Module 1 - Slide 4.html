@@ -1,0 +1,278 @@
+<!doctype html>
+
+<html>
+
+
+<head>
+
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+
+            font-family: 'Titillium Web', sans-serif;
+        }
+
+        #content {
+
+            margin: 0 auto;
+            float: left;
+            width: 100%;
+            height: auto;
+        }
+
+        #title1,
+        #title2 {
+
+            width: 430px;
+            border-radius: 15px;
+            padding: 15px;
+            background-color: rgb(239, 161, 116);
+            color: white;
+            text-align: center;
+            margin-bottom: 20px;
+            opacity: 0;
+        }
+
+        #title1 {
+
+            animation: 1s ease-out 0s 1 fromTop;
+            animation-fill-mode: forwards;
+        }
+
+        #title2 {
+
+            animation: 1s ease-out 9s 1 fromTop;
+            animation-fill-mode: forwards;
+        }
+
+        .columns {
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            flex-wrap: wrap;
+            float: left;
+            margin: 0px 50px 10px 50px;
+        }
+
+        #aims1,
+        #aims2 {
+
+            float: left;
+            list-style-type: none;
+            width: 430px;
+        }
+
+        #aims1 li,
+        #aims2 li {
+
+            opacity: 0;
+        }
+
+        #aims1 li:nth-child(1) {
+
+            animation: 1s ease-out 1s 1 fromLeft;
+            animation-fill-mode: forwards;
+
+        }
+        #aims1 li:nth-child(2) {
+
+            animation: 1s ease-out 2s 1 fromLeft;
+            animation-fill-mode: forwards;
+
+        }
+
+        #aims1 li:nth-child(3) {
+
+            animation: 1s ease-out 3s 1 fromLeft;
+            animation-fill-mode: forwards;
+
+        }
+
+        #aims1 li:nth-child(4) {
+
+            animation: 1s ease-out 4s 1 fromLeft;
+            animation-fill-mode: forwards;
+
+        }
+
+        #aims1 li:nth-child(5) {
+
+            animation: 1s ease-out 5s 1 fromLeft;
+            animation-fill-mode: forwards;
+
+        }
+
+        #aims1 li:nth-child(6) {
+
+            animation: 1s ease-out 6s 1 fromLeft;
+            animation-fill-mode: forwards;
+
+        }
+
+        #aims1 li:nth-child(7) {
+
+            animation: 1s ease-out 7s 1 fromLeft;
+            animation-fill-mode: forwards;
+
+        }
+
+        #aims1 li:nth-child(8) {
+
+            animation: 1s ease-out 8s 1 fromLeft;
+            animation-fill-mode: forwards;
+
+        }
+        
+        #aims2 li:nth-child(1) {
+            
+            animation: 1s ease-out 10s 1 fromRight;
+            animation-fill-mode: forwards;
+        }
+
+        #aims2 li:nth-child(2) {
+            
+            animation: 1s ease-out 11s 1 fromRight;
+            animation-fill-mode: forwards;
+        }
+
+        #aims2 li:nth-child(3) {
+            
+            animation: 1s ease-out 12s 1 fromRight;
+            animation-fill-mode: forwards;
+        }
+        
+        #aims2 li:nth-child(4) {
+            
+            animation: 1s ease-out 13s 1 fromRight;
+            animation-fill-mode: forwards;
+        }
+        
+        #aims2 li:nth-child(5) {
+            
+            animation: 1s ease-out 14s 1 fromRight;
+            animation-fill-mode: forwards;
+        }
+        
+        #aims2 li:nth-child(6) {
+            
+            animation: 1s ease-out 15s 1 fromRight;
+            animation-fill-mode: forwards;
+        }
+        
+        #aims2 li:nth-child(7) {
+            
+            animation: 1s ease-out 16s 1 fromRight;
+            animation-fill-mode: forwards;
+        }
+        
+        #aims2 li:nth-child(8) {
+            
+            animation: 1s ease-out 17s 1 fromRight;
+            animation-fill-mode: forwards;
+        }
+        
+        #aims1 li:before,
+        #aims2 li:before {
+
+            content: '';
+            display: inline-block;
+            height: 24px;
+            width: 24px;
+            background-image: url(http://drive.google.com/uc?export=view&id=1iKNpMU6IA83yXtkfi7WdW10fs99Z4hD5);
+            background-repeat: no-repeat;
+            float: left;
+        }
+
+        @keyframes fromLeft {
+            0% {
+                transform: translateX(-100%);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes fromRight {
+            0% {
+                transform: translateX(100%);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes fromTop {
+            0% {
+                transform: translateY(-100%);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div id="content">
+
+        <div class="columns">
+
+            <h2 id="title1">Project & P3 is about implementing change</h2>
+
+            <ul id="aims1">
+
+                <li>Seeks to introduce change</li>
+                <li>Limited by time</li>
+                <li>Teams working with unique/bespoke plans & risks</li>
+                <li>Specified scope so we understand what the project work & products are</li>
+                <li>Produce specific one-off deliverables</li>
+                <li>They have discrete number of steps (delineated by the finite time), called a Project Life-cycle</li>
+                <li>Projects seek step change and transformation</li>
+                <li>Requires a specific authorised business case</li>
+
+            </ul>
+
+        </div>
+
+        <div class="columns">
+
+            <h2 id="title2">Business as Usual is about managing routine activities</h2>
+
+            <ul id="aims2">
+
+                <li>Seeks to maintain a stable platform for efficient production</li>
+                <li>Repetitive and continues indefinitely</li>
+                <li>Highly procedural working practices to enable complex operations to be delivered in a complex way</li>
+                <li>The first few prototypes of a mass-produced item may be a project; once production is on-going, they become Business as Usual</li>
+                <li>Produce specific deliverables, but repeatedly</li>
+                <li>Products go through a life-cycle from build, through operations to disposal, called a Product Life-cycle</li>
+                <li>Business as Usual seeks continuity, consistency & slow incremental improvement</li>
+                <li>Normally funded from operational budgets rather than capital budgets, business cases are less relevant</li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+    <script>
+
+
+
+    </script>
+
+</body>
+
+
+</html>

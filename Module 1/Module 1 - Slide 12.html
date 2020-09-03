@@ -1,0 +1,546 @@
+<!doctype html>
+
+<html>
+
+
+<head>
+
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+
+            font-family: 'Titillium Web', sans-serif;
+        }
+
+        .body-content {
+
+            margin: 0 auto;
+            float: left;
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .factors {
+
+            float: left;
+            list-style-type: none;
+            margin-top: 10px;
+
+        }
+
+        .factors li:before {
+
+            content: '';
+            display: inline-block;
+            height: 24px;
+            width: 24px;
+            background-image: url(http://drive.google.com/uc?export=view&id=1iKNpMU6IA83yXtkfi7WdW10fs99Z4hD5);
+            background-repeat: no-repeat;
+            float: left;
+        }
+
+        .titles {
+
+            text-align: center;
+            padding: 10px 5px 10px 5px;
+            max-width: 350px;
+            background-color: rgb(222, 45, 115);
+            color: white;
+        }
+
+        #political,
+        #economic,
+        #environmental,
+        #technological,
+        #legal,
+        #socio {
+
+            height: 250px;
+            width: 300px;
+            border: 1px black solid;
+            overflow: auto;
+            display: none;
+            margin-bottom: 30px;
+        }
+
+        #text1,
+        #text2,
+        #text3,
+        #text4,
+        #text5,
+        #text6 {
+
+            float: right;
+            text-align: center;
+            border-radius: 15px;
+            background-color: rgb(222, 95, 146);
+            color: white;
+            padding: 5px 5px 5px 5px;
+            max-width: 300px;
+            max-height: 250px;
+            margin: -5px 0px 10px 130px;
+            display: none;
+        }
+
+        #container1 button {
+
+            border: 0;
+            height: 50px;
+            width: 100px;
+            line-height: 2.5;
+            font-size: 1.5rem;
+            text-align: center;
+            color: #fff;
+            text-shadow: 1px 1px 1px #000;
+            border-radius: 10px;
+            background-color: rgb(222, 45, 115);
+            background-image: linear-gradient(to top left,
+                    rgba(0, 0, 0, .2),
+                    rgba(0, 0, 0, .2) 30%,
+                    rgba(0, 0, 0, 0));
+            box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                inset -2px -2px 3px rgba(0, 0, 0, .6);
+        }
+
+        #container2 button {
+
+            border: 0;
+            height: 50px;
+            width: 100px;
+            line-height: 2.5;
+            font-size: 1.5rem;
+            text-align: center;
+            color: #fff;
+            text-shadow: 1px 1px 1px #000;
+            border-radius: 10px;
+            background-color: rgb(222, 45, 115);
+            background-image: linear-gradient(to top left,
+                    rgba(0, 0, 0, .2),
+                    rgba(0, 0, 0, .2) 30%,
+                    rgba(0, 0, 0, 0));
+            box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                inset -2px -2px 3px rgba(0, 0, 0, .6);
+        }
+
+        #container3 button {
+
+            border: 0;
+            height: 50px;
+            width: 100px;
+            line-height: 2.5;
+            font-size: 1.5rem;
+            text-align: center;
+            color: #fff;
+            text-shadow: 1px 1px 1px #000;
+            border-radius: 10px;
+            background-color: rgb(222, 45, 115);
+            background-image: linear-gradient(to top left,
+                    rgba(0, 0, 0, .2),
+                    rgba(0, 0, 0, .2) 30%,
+                    rgba(0, 0, 0, 0));
+            box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                inset -2px -2px 3px rgba(0, 0, 0, .6);
+        }
+
+        #container4 button {
+
+            border: 0;
+            height: 50px;
+            width: 100px;
+            line-height: 2.5;
+            font-size: 1.5rem;
+            text-align: center;
+            color: #fff;
+            text-shadow: 1px 1px 1px #000;
+            border-radius: 10px;
+            background-color: rgb(222, 45, 115);
+            background-image: linear-gradient(to top left,
+                    rgba(0, 0, 0, .2),
+                    rgba(0, 0, 0, .2) 30%,
+                    rgba(0, 0, 0, 0));
+            box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                inset -2px -2px 3px rgba(0, 0, 0, .6);
+        }
+
+        #container5 button {
+
+            border: 0;
+            height: 50px;
+            width: 100px;
+            line-height: 2.5;
+            font-size: 1.5rem;
+            text-align: center;
+            color: #fff;
+            text-shadow: 1px 1px 1px #000;
+            border-radius: 10px;
+            background-color: rgb(222, 45, 115);
+            background-image: linear-gradient(to top left,
+                    rgba(0, 0, 0, .2),
+                    rgba(0, 0, 0, .2) 30%,
+                    rgba(0, 0, 0, 0));
+            box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                inset -2px -2px 3px rgba(0, 0, 0, .6);
+        }
+
+        #container6 button {
+
+            border: 0;
+            height: 50px;
+            width: 100px;
+            line-height: 2.5;
+            font-size: 1.5rem;
+            text-align: center;
+            color: #fff;
+            text-shadow: 1px 1px 1px #000;
+            border-radius: 10px;
+            background-color: rgb(222, 45, 115);
+            background-image: linear-gradient(to top left,
+                    rgba(0, 0, 0, .2),
+                    rgba(0, 0, 0, .2) 30%,
+                    rgba(0, 0, 0, 0));
+            box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                inset -2px -2px 3px rgba(0, 0, 0, .6);
+        }
+
+        #container1 button:hover {
+
+            background-color: rgb(222, 95, 146);
+        }
+
+        #container2 button:hover {
+
+            background-color: rgb(222, 95, 146);
+        }
+
+        #container3 button:hover {
+
+            background-color: rgb(222, 95, 146);
+        }
+
+        #container4 button:hover {
+
+            background-color: rgb(222, 95, 146);
+        }
+
+        #container5 button:hover {
+
+            background-color: rgb(222, 95, 146);
+        }
+
+        #container6 button:hover {
+
+            background-color: rgb(222, 95, 146);
+        }
+
+        #container1 button:active {
+
+            box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+                inset 2px 2px 3px rgba(0, 0, 0, .6);
+        }
+
+        #container2 button:active {
+
+            box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+                inset 2px 2px 3px rgba(0, 0, 0, .6);
+        }
+
+        #container3 button:active {
+
+            box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+                inset 2px 2px 3px rgba(0, 0, 0, .6);
+        }
+
+        #container4 button:active {
+
+            box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+                inset 2px 2px 3px rgba(0, 0, 0, .6);
+        }
+
+        #container5 button:active {
+
+            box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+                inset 2px 2px 3px rgba(0, 0, 0, .6);
+        }
+
+        #container6 button:active {
+
+            box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+                inset 2px 2px 3px rgba(0, 0, 0, .6);
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="body-content">
+
+        <div id="container1">
+
+            <button id="one" onclick="hideShow1()">Political</button>
+
+            <p id="text1">These include both local and global political factors.</p>
+
+        </div>
+
+        <div id="political">
+
+            <div class="titles">Political Factors</div>
+
+            <ul class="factors">
+
+                <li>A country's political system</li>
+                <li>International relationships</li>
+                <li>Government sanctions</li>
+                <li>Subsidies</li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+    <div class="body-content">
+
+        <div id="container2">
+
+            <button id="two" onclick="hideShow2()">Economic</button>
+
+            <p id="text2">These include factors associated with the general state of the economy, goods, services and money.</p>
+
+        </div>
+
+        <div id="economic">
+
+            <div class="titles">Economic Factors</div>
+
+            <ul class="factors">
+
+                <li>Supply and demand for a certain product</li>
+                <li>Taxes</li>
+                <li>Interest rates</li>
+                <li>Inflation</li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+    <div class="body-content">
+
+        <div id="container3">
+
+            <button id="three" onclick="hideShow3()">Social</button>
+
+            <p id="text3">These include factors related to the society, its culture, general public and their behavior.</p>
+
+        </div>
+
+        <div id="socio">
+
+            <div class="titles">Socio-cultural Factors</div>
+
+            <ul class="factors">
+
+                <li>Consumer lifestyles</li>
+                <li>Social classes</li>
+                <li>Health & welfare</li>
+                <li>Families</li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+    <div class="body-content">
+
+        <div id="container4">
+
+            <button id="four" onclick="hideShow4()">Technological</button>
+
+            <p id="text4">These include factors connected to the existence, availability, and development of technology.</p>
+
+        </div>
+
+        <div id="technological">
+
+            <div class="titles">Technological Factors</div>
+
+            <ul class="factors">
+
+                <li>Development of robots</li>
+                <li>Internet connectivity</li>
+                <li>Security in cryptography</li>
+                <li>Efficiency of search engines</li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+    <div class="body-content">
+
+        <div id="container5">
+
+            <button id="five" onclick="hideShow5()">Legal</button>
+
+            <p id="text5">These factors focus on the influence of law on business operation and customer behavior and are concerned with government intervention in society and economy to maintain fairness and wellbeing.</p>
+
+        </div>
+
+        <div id="legal">
+
+            <div class="titles">Legal Factors</div>
+
+            <ul class="factors">
+
+                <li>Consumer law</li>
+                <li>Fraud law</li>
+                <li>Import/Export law</li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+    <div class="body-content">
+
+        <div id="container6">
+
+            <button id="six" onclick="hideShow6()">Ecological</button>
+
+            <p id="text6">These factors are also known as <i>ecological</i> factors and include variables related to the physical environment of the world we live on.</p>
+
+        </div>
+
+        <div id="environmental">
+
+            <div class="titles">Environmental/Ecological Factors</div>
+
+            <ul class="factors">
+
+                <li>Climate change</li>
+                <li>Animal extinction</li>
+                <li>Pollution</li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+    <script>
+       
+        function hideShow1() {
+            
+            var x = document.getElementById("political");
+            var x2 = document.getElementById("text1");
+            
+            if(x.style.display === "none" && x2.style.display === "none") {
+                
+                x.style.display = "block";
+                x2.style.display = "block";
+            } else {
+                
+                x.style.display = "none";
+                x2.style.display = "none";
+            }
+        }
+        
+        function hideShow2() {
+            
+            var y = document.getElementById("economic");
+            var y2 = document.getElementById("text2");
+            
+            if(y.style.display === "none" && y2.style.display === "none") {
+                
+                y.style.display = "block";
+                y2.style.display = "block";
+            } else {
+                
+                y.style.display = "none";
+                y2.style.display = "none";
+            }
+        }
+        
+        
+        function hideShow3() {
+            
+            var z = document.getElementById("socio");
+            var z2 = document.getElementById("text3");
+            
+            if(z.style.display === "none" && z2.style.display === "none") {
+                
+                z.style.display = "block";
+                z2.style.display = "block";
+            } else {
+                
+                z.style.display = "none";
+                z2.style.display = "none";
+            }
+        }
+        
+        function hideShow4() {
+            
+            var t = document.getElementById("technological");
+            var t2 = document.getElementById("text4");
+            
+            if(t.style.display === "none" && t2.style.display === "none") {
+                
+                t.style.display = "block";
+                t2.style.display = "block";
+            } else {
+                
+                t.style.display = "none";
+                t2.style.display = "none";
+            }
+        }
+        
+        function hideShow5() {
+            
+            var k = document.getElementById("legal");
+            var k2 = document.getElementById("text5");
+            
+            if(k.style.display === "none" && k2.style.display === "none") {
+                
+                k.style.display = "block";
+                k2.style.display = "block";
+            } else {
+                
+                k.style.display = "none";
+                k2.style.display = "none";
+            }
+        }
+        
+        function hideShow6() {
+            
+            var j = document.getElementById("environmental");
+            var j2 = document.getElementById("text6");
+            
+            if(j.style.display === "none" && j2.style.display === "none") {
+                
+                j.style.display = "block";
+                j2.style.display = "block";
+            } else {
+                
+                j.style.display = "none";
+                j2.style.display = "none";
+            }
+        }
+
+    </script>
+
+</body>
+
+
+</html>

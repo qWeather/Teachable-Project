@@ -1,0 +1,158 @@
+<!doctype html>
+
+<html>
+
+
+<head>
+
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+
+            font-family: 'Titillium Web', sans-serif;
+        }
+
+        #content {
+
+            margin: 0 auto;
+            float: left;
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        #container1,
+        #container2,
+        #container3 {
+
+            text-align: center;
+            border: 2px solid black;
+            color: black;
+            font-weight: bold;
+            padding: 20px 20px 20px 20px;
+            margin: 0px 5px 5px 5px;
+            max-width: 250px;
+            max-height: 150px;
+            opacity: 0;
+        }
+
+        #container1 {
+
+            background-color: rgb(226, 134, 50);
+            animation: 1s ease-out 0s 1 fromLeft;
+            animation-fill-mode: forwards;
+        }
+
+        #container2 {
+
+            background-color: rgb(109, 118, 233);
+            animation: 1s ease-out 1s 1 fromBottom;
+            animation-fill-mode: forwards;
+        }
+
+        #container3 {
+
+            background-color: rgb(145, 134, 85);
+            animation: 1s ease-out 2s 1 fromRight;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes fromBottom {
+            0% {
+                transform: translateY(100%);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fromLeft {
+            0% {
+                transform: translateX(-100%);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes fromRight {
+            0% {
+                transform: translateX(100%);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes pulse {
+
+            0% {
+                transform: scale(0);
+            }
+
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        #handshake-container {
+
+            opacity: 0;
+            margin: 20px 0px 0px 20px;
+            animation: pulse 2s;
+            animation-delay: 3s;
+            animation-fill-mode: forwards;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div id="content">
+
+        <div id="container1">
+
+            <div class="image-content">P3 management has to work closely with operations management to bring about change that becomes routine activity.</div>
+
+        </div>
+
+        <div id="container2">
+
+            <div class="image-content">It is the delivery of these routine products and services that contribute to the strategic mission of the organisation.</div>
+
+        </div>
+
+        <div id="container3">
+
+            <div class="image-content">The improved effectiveness and efficiency of business-as-usual usually are the benefits of an effective project, programme or portofolio.</div>
+
+        </div>
+
+        <div id="handshake-container">
+
+            <img id="handshake" src="http://drive.google.com/uc?export=view&id=1qjSw77jfNMAoalumFhonCc1n3v9yN9HX" alt="handshake">
+
+        </div>
+
+    </div>
+
+    <script>
+
+    </script>
+
+</body>
+
+
+</html>

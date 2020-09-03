@@ -1,0 +1,214 @@
+<!doctype html>
+
+<html>
+
+
+<head>
+
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+
+            font-family: 'Titillium Web', sans-serif;
+        }
+
+        #content {
+
+            margin: 0 auto;
+            float: left;
+            width: 100%;
+            height: auto;
+        }
+
+        #title1,
+        #title2 {
+
+            width: 430px;
+            border: 2px solid black;
+            border-radius: 15px;
+            padding: 15px;
+            background-color: rgb(144, 151, 252);
+            text-align: center;
+            margin-bottom: 20px;
+            opacity: 0;
+        }
+        
+        #title1 {
+            
+            animation: 1s ease-out 0s 1 fromTop;
+            animation-fill-mode: forwards;
+        }
+        
+        #title2 {
+            
+            animation: 1s ease-out 8s 1 fromTop;
+            animation-fill-mode: forwards;
+        }
+        
+        .columns {
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            flex-wrap: wrap;
+            float: left;
+            margin: 0px 50px 20px 50px;
+        }
+
+        #f,
+        #p,
+        #pr,
+        #b,
+        #d,
+        #t,
+        #s {
+
+            text-align: center;
+            border: 1px solid black;
+            background-color: rgb(0, 19, 75);
+            color: white;
+            width: 250px;
+            padding: 10px 10px 10px 10px;
+            margin-bottom: 20px;
+            opacity: 0;
+        }
+
+        #f {
+
+            animation: 1s ease-out 1s 1 fromLeft;
+            animation-fill-mode: forwards;
+        }
+
+        #p {
+
+            animation: 1s ease-out 2s 1 fromLeft;
+            animation-fill-mode: forwards;
+            margin-left: 30px;
+        }
+
+        #d {
+
+            animation: 1s ease-out 3s 1 fromLeft;
+            animation-fill-mode: forwards;
+            margin-left: 60px;
+        }
+
+        #b {
+
+            animation: 1s ease-out 4s 1 fromLeft;
+            animation-fill-mode: forwards;
+            margin-left: 90px;
+        }
+
+        #t {
+
+            animation: 1s ease-out 5s 1 fromLeft;
+            animation-fill-mode: forwards;
+            margin-left: 120px;
+        }
+
+        #pr {
+
+            animation: 1s ease-out 6s 1 fromLeft;
+            animation-fill-mode: forwards;
+            margin-left: 150px;
+        }
+
+        #s {
+
+            animation: 1s ease-out 7s 1 fromLeft;
+            animation-fill-mode: forwards;
+            margin-left: 180px;
+        }
+
+        #agile {
+
+            width: 430px;
+            height: 430px;
+            opacity: 0;
+            animation: 1s ease-out 9s 1 fromRight;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes fromLeft {
+            0% {
+                transform: translateX(-100%);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes fromRight {
+            0% {
+                transform: translateX(100%);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        
+        @keyframes fromTop {
+            0% {
+                transform: translateY(-100%);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div id="content">
+
+        <div class="columns">
+
+            <h2 id="title1">Waterfall</h2>
+
+            <div id="f">Feasibility</div>
+
+            <div id="p">Plan</div>
+
+            <div id="d">Design</div>
+
+            <div id="b">Build</div>
+
+            <div id="t">Test</div>
+
+            <div id="pr">Production</div>
+
+            <div id="s">Support</div>
+
+        </div>
+
+        <div class="columns">
+
+            <h2 id="title2">Agile</h2>
+
+            <img id="agile" src="https://drive.google.com/uc?export=view&id=1W_q22quHuugBclj6ZVaqeKr6-DJVppso" alt="agile">
+
+        </div>
+
+    </div>
+
+    <script>
+
+
+
+    </script>
+
+</body>
+
+
+</html>

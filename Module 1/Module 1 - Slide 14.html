@@ -1,0 +1,409 @@
+<!doctype html>
+
+<html>
+
+
+<head>
+
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+
+            font-family: 'Titillium Web', sans-serif;
+        }
+
+        .body-content {
+
+            margin: 0 auto;
+            float: left;
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .factors {
+
+            float: left;
+            list-style-type: none;
+
+        }
+
+        .factors li:before {
+
+            content: '';
+            display: inline-block;
+            height: 24px;
+            width: 24px;
+            background-image: url(http://drive.google.com/uc?export=view&id=1iKNpMU6IA83yXtkfi7WdW10fs99Z4hD5);
+            background-repeat: no-repeat;
+            float: left;
+        }
+
+        .titles {
+
+            text-align: center;
+            padding: 10px 5px 10px 5px;
+            max-width: 350px;
+        }
+
+        #strengths,
+        #opportunities,
+        #weaknesses,
+        #threats {
+
+            height: 250px;
+            width: 300px;
+            border: 1px black solid;
+            margin: 0px 20px 20px 20px;
+            overflow: auto;
+            display: none;
+            margin-bottom: 30px;
+        }
+
+        #text1, #text2, #text3, #text4 {
+
+            float: right;
+            text-align: center;
+            border: 2px solid black;
+            border-radius: 15px;
+            color: white;
+            padding: 5px 5px 5px 5px;
+            max-width: 300px;
+            max-height: 250px;
+            margin: -5px 0px 10px 130px;
+            display: none;
+        }
+
+        #text1 {
+            
+            background-color: rgb(240, 141, 84);
+        }
+        
+        #text2 {
+            
+            background-color: rgb(149, 235, 84);
+        }
+        
+        #text3 {
+            
+            background-color: rgb(62, 222, 183);
+        }
+        
+        #text4 {
+            
+            background-color: rgb(76, 88, 230);
+        }
+        
+        #container1 button {
+
+            height: 50px;
+            width: 100px;
+            border: 0;
+            line-height: 2.5;
+            font-size: 1.5rem;
+            text-align: center;
+            color: #fff;
+            background-color: rgb(239, 161, 116);
+            text-shadow: 1px 1px 1px #000;
+            border-radius: 10px;
+            background-image: linear-gradient(to top left,
+                    rgba(0, 0, 0, .2),
+                    rgba(0, 0, 0, .2) 30%,
+                    rgba(0, 0, 0, 0));
+            box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                inset -2px -2px 3px rgba(0, 0, 0, .6);
+            margin-bottom: 10px;
+        }
+
+        #container2 button {
+
+            height: 50px;
+            width: 100px;
+            border: 0;
+            line-height: 2.5;
+            font-size: 1.5rem;
+            text-align: center;
+            color: #fff;
+            background-color: rgb(167, 237, 114);
+            text-shadow: 1px 1px 1px #000;
+            border-radius: 10px;
+            background-image: linear-gradient(to top left,
+                    rgba(0, 0, 0, .2),
+                    rgba(0, 0, 0, .2) 30%,
+                    rgba(0, 0, 0, 0));
+            box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                inset -2px -2px 3px rgba(0, 0, 0, .6);
+            margin-bottom: 10px;
+        }
+
+        #container3 button {
+            
+            height: 50px;
+            width: 100px;
+            border: 0;
+            line-height: 2.5;
+            font-size: 1.5rem;
+            text-align: center;
+            color: #fff;
+            background-color: rgb(110, 233, 203);
+            text-shadow: 1px 1px 1px #000;
+            border-radius: 10px;
+            background-image: linear-gradient(to top left,
+                    rgba(0, 0, 0, .2),
+                    rgba(0, 0, 0, .2) 30%,
+                    rgba(0, 0, 0, 0));
+            box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                inset -2px -2px 3px rgba(0, 0, 0, .6);
+            margin-bottom: 10px;
+        }
+
+        #container4 button {
+
+            height: 50px;
+            width: 100px;
+            border: 0;
+            line-height: 2.5;
+            font-size: 1.5rem;
+            text-align: center;
+            color: #fff;
+            background-color: rgb(108, 118, 231);
+            text-shadow: 1px 1px 1px #000;
+            border-radius: 10px;
+            background-image: linear-gradient(to top left,
+                    rgba(0, 0, 0, .2),
+                    rgba(0, 0, 0, .2) 30%,
+                    rgba(0, 0, 0, 0));
+            box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                inset -2px -2px 3px rgba(0, 0, 0, .6);
+            margin-bottom: 10px;
+        }
+
+        #container1 button:hover {
+
+            background-color: rgb(240, 141, 84);
+        }
+
+        #container2 button:hover {
+
+            background-color: rgb(149, 235, 84);
+        }
+
+        #container3 button:hover {
+
+            background-color: rgb(62, 222, 183);
+        }
+
+        #container4 button:hover {
+
+            background-color: rgb(76, 88, 230);
+        }
+        
+        #container1 button:active {
+
+            box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+                inset 2px 2px 3px rgba(0, 0, 0, .6);
+        }
+
+        #container2 button:active {
+
+            box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+                inset 2px 2px 3px rgba(0, 0, 0, .6);
+        }
+
+        #container3 button:active {
+
+            box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+                inset 2px 2px 3px rgba(0, 0, 0, .6);
+        }
+
+        #container4 button:active {
+
+            box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+                inset 2px 2px 3px rgba(0, 0, 0, .6);
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="body-content">
+
+        <div id="container1">
+
+            <button id="one" onclick="hideShow1()">Strengths</button>
+
+            <p id="text1">It refers to the project or project team's attributes which helps in achieving business objectives.</p>
+
+        </div>
+
+        <div id="strengths">
+
+            <div class="titles" style="background-color: rgb(239, 161, 116)">Strengths</div>
+
+            <ul class="factors">
+
+                <li>What are the unique skills?</li>
+                <li>What is the expert or specialized knowledge in the team?</li>
+                <li>What experience does the team have?</li>
+                <li>How are your skills better than your competitors?</li>
+                <li>What advantages does the organization have?</li>
+                <li>What unique or lowest-cost resources can be sourced that others can't?</li>
+                <li>What is organization's <b>Unique Selling Proposition (USP)</b>?</li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+    <div class="body-content">
+
+        <div id="container2">
+
+            <button id="two" onclick="hideShow2()">Weaknesses</button>
+
+            <p id="text2">Refers to internal team or organization's characteristics that could have a negative impact on business and that could hurt its progress in achieving the desired objectives. Consider factors from an internal and external perspective.</p>
+
+        </div>
+
+        <div id="opportunities">
+
+            <div class="titles" style="background-color: rgb(167, 237, 114)">Weaknesses</div>
+
+            <ul class="factors">
+
+                <li>What could be improved?</li>
+                <li>What should be avoided?</li>
+                <li>What competitors or clients perceive as weaknesses?</li>
+                <li>What factors cause failures in project?</li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+    <div class="body-content">
+
+        <div id="container3">
+
+            <button id="three" onclick="hideShow3()">Opportunities</button>
+
+            <p id="text3">These involve external conditions that help in achieving target goals & objectives.
+                <b>What good opportunities can be spotted?
+                    What favorable trends coming up?</b></p>
+
+        </div>
+
+        <div id="weaknesses">
+
+            <div class="titles" style="background-color: rgb(110, 233, 203)">Opportunities</div>
+
+            <ul class="factors">
+
+                <li>Techonogical and market changes, both on a broad and narrow scale</li>
+                <li>Changes in related field's government policy</li>
+                <li>Changes in social patterns, population profiles, lifestyle changes, and so on</li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+    <div class="body-content">
+
+        <div id="container4">
+
+            <button id="four" onclick="hideShow4()">Threats</button>
+
+            <p id="text4">These involve external factors that could damage project's or business' performance.</p>
+
+        </div>
+
+
+        <div id="threats">
+
+            <div class="titles" style="background-color: rgb(108, 118, 231)">Threats</div>
+
+            <ul class="factors">
+
+                <li>What obstacles are being face?</li>
+                <li>What are the competitors doing?</li>
+                <li>Any changes in quality standards or specifications related to project, products or services?</li>
+                <li>Threat from change in technology</li>
+                <li>Are there any bad debt or cash-flow problems?</li>
+                <li>Could any of the weaknesses act as serious threat to business?</li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+    <script>
+        
+       function hideShow1() {
+            
+            var x = document.getElementById("text1");
+            
+            if(x.style.display === "none") {
+                
+                x.style.display = "block";
+            } else {
+                
+                x.style.display = "none";
+            }
+        }
+
+        function hideShow2() {
+            
+            var y = document.getElementById("text2");
+            
+            if(y.style.display === "none") {
+                
+                y.style.display = "block";
+            } else {
+                
+                y.style.display = "none";
+            }
+        }
+
+        function hideShow3() {
+            
+            var z = document.getElementById("text3");
+            
+            if(z.style.display === "none") {
+                
+                z.style.display = "block";
+            } else {
+                
+                z.style.display = "none";
+            }
+        }
+
+        function hideShow4() {
+            
+            var t = document.getElementById("text4");
+            
+            if(t.style.display === "none") {
+                
+                t.style.display = "block";
+            } else {
+                
+                t.style.display = "none";
+            }
+        }
+
+    </script>
+
+</body>
+
+
+</html>

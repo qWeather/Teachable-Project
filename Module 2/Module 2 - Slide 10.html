@@ -1,0 +1,109 @@
+<!doctype html>
+
+<html>
+
+
+<head>
+
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+
+            font-family: 'Titillium Web', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        #content {
+
+            margin: 0 auto;
+            float: left;
+            width: 100%;
+            height: auto;
+        }
+
+        #aims {
+
+            list-style-type: none;
+        }
+
+        #aims li:before {
+
+            content: '';
+            display: inline-block;
+            height: 24px;
+            width: 24px;
+            background-image: url(http://drive.google.com/uc?export=view&id=1iKNpMU6IA83yXtkfi7WdW10fs99Z4hD5);
+            background-repeat: no-repeat;
+            margin-right: 5px;
+            float: left;
+        }
+
+        #factors {
+
+            text-align: center;
+            border: 1px solid black;
+            background-color: rgb(222, 45, 115);
+            color: white;
+            padding: 10px 10px 10px 10px;
+        }
+
+        #info {
+
+            float: left;
+            margin: -10px 10px 0px 0px;
+            vertical-align: middle;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div id="content">
+
+        <img id="info" src="https://drive.google.com/uc?export=view&id=1YK9s0LQRiU9GHkVU6jStpfjYcduJB7k-" alt="info">
+
+        <p id="info-text">Many organizations either tailor open methodologies <b>(such as PRINCE2)</b> or develop their own bespoke approaches.</p>
+
+        <p id="factors">The advantages of using a standard methodology across an organisation include:</p>
+
+        <ul id="aims">
+
+            <li>use of consistent terminology</li>
+            <li>aa common understanding of the responsibilities associated with roles</li>
+            <li>consistent documentation across projects</li>
+            <li>a structure for development of new project managers</li>
+            <li>greater mobility of staff between projects</li>
+            <li>can be used to support the governance structure for management of project</li>
+
+        </ul>
+
+    </div>
+
+    <script>
+        function flash() {
+
+            $('#info-text').fadeOut(500);
+            $('#info-text').fadeIn(500);
+
+            $('#info-text').fadeOut(500);
+            $('#info-text').fadeIn(500);
+
+            $('#info').fadeOut(500);
+            $('#info').fadeIn(500);
+
+            $('#info').fadeOut(500);
+            $('#info').fadeIn(500);
+        }
+
+        setTimeout(flash, 1000);
+
+    </script>
+
+</body>
+
+
+</html>

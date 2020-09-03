@@ -1,0 +1,166 @@
+<!doctype html>
+
+<html>
+
+
+<head>
+
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+
+            font-family: 'Titillium Web', sans-serif;
+        }
+
+        #content {
+
+            margin: 0 auto;
+            float: left;
+            width: 100%;
+            height: auto;
+        }
+
+        #aims {
+
+            float: left;
+            list-style-type: none;
+        }
+
+        #aims li:before {
+
+            content: '';
+            display: inline-block;
+            height: 24px;
+            width: 24px;
+            background-image: url(http://drive.google.com/uc?export=view&id=1iKNpMU6IA83yXtkfi7WdW10fs99Z4hD5);
+            background-repeat: no-repeat;
+            float: left;
+        }
+
+        #factors {
+
+            text-align: center;
+            border: 1px solid black;
+            background-color: rgb(222, 45, 115);
+            color: white;
+            padding: 10px 10px 10px 10px;
+        }
+
+        #container1,
+        #container2 {
+
+            text-align: center;
+            background-color: #FFC000;
+            color: black;
+            padding: 10px;
+            margin: 0px 5px 5px 0px;
+            max-width: 250px;
+            max-height: 150px;
+            opacity: 0;
+            float: left;
+        }
+
+        #container1 {
+
+            animation: 1s ease-out 0s 1 fromLeft;
+            animation-fill-mode: forwards;
+        }
+
+        #container2 {
+
+            animation: 1s ease-out 1s 1 fromRight;
+            animation-fill-mode: forwards;
+        }
+
+        #group {
+            
+            opacity: 0;
+            animation: pulse 2s;
+            animation-delay: 2s;
+            animation-fill-mode: forwards;
+        }
+        
+        @keyframes fromLeft {
+            0% {
+                transform: translateX(-100%);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes fromRight {
+            0% {
+                transform: translateX(100%);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes pulse {
+
+            0% {
+                transform: scale(0);
+            }
+
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+        
+    </style>
+
+</head>
+
+<body>
+
+    <div id="content">
+
+        <p id="factors"><b>Stakeholders</b> are those individuals (or organizations) with an <b>interest</b> in the project, programme or portfolio, <b><u>because they are involved in the work or are affected by the outcomes</u></b>.</p>
+
+        <ul id="aims">
+
+            <li>A project can have a variety of stakeholder, with different and, sometimes, competing, interests.</li>
+            <li>These stakeholders can have low to significant <b>influence</b> over the success or failure of the work.</li>
+            <li>They may be active or passive as far as participation on the project goes, but the one thing they all have in common is that <b><u>each of them has something to either gain or lose as a result of the project</u></b>.</li>
+            <li>To Mentor, coach, and train project managers</li>
+            <li>A project is successful when it achieves its objectives and meets the expectations of the stakeholders.</li>
+            <li>Many times, stakeholders have conflicting interests. It's the project manager's responsibility to understand these conflicts and try to resolve them.</li>
+            <li>It's also the project manager's responsibility to manage stakeholder expectations. Be certain to identify and meet with all key stakeholders early in the project to understand their expectations, needs, and constraints.</li>
+            <li>When in doubt, you should always resolve stakeholder conflicts in favor of the customer.</li>
+
+        </ul>
+
+        <div id="container1">
+
+            <div class="image-content">They have a key role in defining a project's success criteria.</div>
+
+        </div>
+
+        <div id="container2">
+
+            <div class="image-content">Their level of interest and power should not be overlooked.</div>
+
+        </div>
+
+        <img id="group" src="http://drive.google.com/uc?export=view&id=1Wuf7jQwrUGL3anshBicZOJhL2IrcPnU4" alt="group">
+
+    </div>
+
+    <script>
+
+
+
+    </script>
+
+</body>
+
+
+</html>
